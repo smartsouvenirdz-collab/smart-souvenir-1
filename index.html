@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Souvenir - رسالة عزيمة</title>
+    <title>Smart Souvenir - تجربة تفاعلية</title>
     <style>
         body { 
             margin: 0; 
@@ -11,55 +11,59 @@
             color: #d4af37; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             text-align: center; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center;
-            min-height: 100vh; 
+            padding-bottom: 50px;
         }
         .container { 
-            padding: 30px; 
+            padding: 20px; 
             border: 2px solid #d4af37; 
-            margin: 15px; 
+            margin: 15px auto; 
             border-radius: 20px; 
             box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
-            max-width: 90%;
-            background: rgba(0, 0, 0, 0.6);
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.7);
         }
         .video-wrapper {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             border-radius: 12px;
             border: 1px solid #d4af37;
-            margin: 20px 0;
+            margin: 15px 0;
         }
         .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
         }
-        h1 { font-size: 1.6rem; letter-spacing: 1px; margin-bottom: 10px; }
-        p { font-size: 1.1rem; color: #f0e68c; line-height: 1.6; }
-        .footer { font-size: 0.8rem; margin-top: 15px; opacity: 0.8; }
+        .padlet-frame {
+            width: 100%;
+            height: 600px;
+            border-radius: 15px;
+            border: 2px solid #d4af37;
+            margin-top: 20px;
+            background: #f4f4f4;
+        }
+        h1 { font-size: 1.5rem; margin-top: 10px; }
+        .hint { color: #f0e68c; font-size: 0.9rem; margin-bottom: 10px; }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>✨ جرعة تحفيز وانطلاقة ✨</h1>
-        
+        <h1>✨ رسالة ترحيبية ✨</h1>
         <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/zB18-Fu0Ps4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        
-        <p>"ابدأ خطواتك الأولى في محاولة جديدة.. النجاح متاح بإذن الله"</p>
-        
-        <div class="footer">
-            صُنع خصيصاً لمشروع Smart Souvenir ❤️
+            <iframe src="https://www.youtube.com/embed/zB18-Fu0Ps4" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
+
+    <div class="container">
+        <h1>🎙️ حائط الذكريات</h1>
+        <p class="hint">اضغط على (+) لإضافة صوت، صورة، أو فيديو</p>
+        <iframe src="https://padlet.com/embed/8xisgnutgnx809wa" frameborder="0" allow="camera;microphone;geolocation;display-capture;clipboard-write" class="padlet-frame"></iframe>
+    </div>
+
+    <div style="font-size: 0.8rem; opacity: 0.6; margin-top: 20px;">
+        صُنع بكل حب في Smart Souvenir ❤️
+    </div>
+
 </body>
 </html>
