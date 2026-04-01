@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Souvenir - رسالة عزيمة</title>
+    <style>
+        body { 
+            margin: 0; 
+            background: radial-gradient(circle, #1a1a1a 0%, #000000 100%); 
+            color: #d4af37; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+            min-height: 100vh; 
+        }
+        .container { 
+            padding: 30px; 
+            border: 2px solid #d4af37; 
+            margin: 15px; 
+            border-radius: 20px; 
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+            max-width: 90%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 1px solid #d4af37;
+            margin: 20px 0;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        h1 { font-size: 1.6rem; letter-spacing: 1px; margin-bottom: 10px; }
+        p { font-size: 1.1rem; color: #f0e68c; line-height: 1.6; }
+        .footer { font-size: 0.8rem; margin-top: 15px; opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ جرعة تحفيز وانطلاقة ✨</h1>
+        
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/zB18-Fu0Ps4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <p>"ابدأ خطواتك الأولى في محاولة جديدة.. النجاح متاح بإذن الله"</p>
+        
+        <div class="footer">
+            صُنع خصيصاً لمشروع Smart Souvenir ❤️
+        </div>
+    </div>
+</body>
+</html>
